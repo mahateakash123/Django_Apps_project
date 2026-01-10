@@ -1,0 +1,16 @@
+
+body{
+    background-color: cyan;
+    color: black;
+
+}
+
+h1{
+    white-space: pre-line;
+}
+
+img{
+    border: 10px groove yellowgreen;
+    height: 400px;
+    width: 40%;
+}

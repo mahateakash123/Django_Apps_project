@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student App</title>
+</head>
+<body>
+{% load static %}
+<link rel="stylesheet" href="{% static 'StudentApp/style.css' %}">
+<div class="form-box">
+
+    <form action="./comp" method="get">
+        <h1><u> STUDENT DETAILS</u></h1>
+        <h2> Enter Student Name:<input type="text" name="t1" size="15"></h2>
+        <h2> Enter Student RollNo:<input type="text" name="t2" size="15"></h2>
+        <h2> Enter Student Branch:<input type="text" name="t3" size="15"></h2>
+        <h2> Enter Student College Name:<input type="text" name="t4" size="15"></h2>
+        <h2> Enter Marks of Math:<input type="text" name="t5" size="15"></h2>
+        <h2> Enter Marks of Chemistry:<input type="text" name="t6" size="15"></h2>
+        <h2> Enter Marks of Physics:<input type="text" name="t7" size="15"></h2>
+        
+        <input type="Submit" value="SUBMIT">
+        <input type="reset" value="CLEAR">
+
+    </form>
+    </div>
+
+</body>
+</html>

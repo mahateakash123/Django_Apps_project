@@ -1,0 +1,26 @@
+
+
+.jumbotron{
+    margin-top :100px;
+    background: cyan;
+    color :black
+    
+
+}
+
+body{
+
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsru95BPiuzSuio2iWyhWKrAJl53cbyn47uw&s);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: chartreuse;
+}
+
+h1{
+    text-align: center;
+    background-color: red;
+}
+ul{
+    font-size: 30px;
+}
+

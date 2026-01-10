@@ -1,0 +1,27 @@
+
+{% load static %}
+<html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static 'css/sample2.css' %}">
+</head>
+<body>
+<h1> HYDERABAD NEWS......HEADLINES OF TODAY!!!</h1><hr>
+<div class="container">
+ <div class="jumbotron jumbotron-fluid" align="center">
+    <div class="container">   
+        
+<ul>
+     <li>{{ news1 | upper }}</li>
+     <li>{{ news2 | lower }}</li>
+     <li>{{ news3 | title }}</li>
+     <li>{{ news4 }}</li>
+     <li>{{ news5 }}</li>
+     <li>{{ news6 }}</li>
+</ul>
+
+<img src="{% static 'images/images.jfif'%}">
+</div>
+ </div>
+ </div>
+</body>
