@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Table</title>
+</head>
+<body>
+    <h1>Employee Information</h1>
+    {% if emps %}
+        <table border="5">
+            <tr>
+                <th>Emp No</th>
+                <th>Emp Name</th>
+                <th>Salary</th>
+                <th>Sex</th>
+                <th>Dno</th>
+            </tr>
+            {% for p in emps %}
+            <tr>
+                <td>{{ p.eno }}</td>
+                <td>{{ p.ename }}</td>
+                <td>{{ p.sal }}</td>
+                <td>{{ p.sex }}</td>
+                <td>{{ p.dno }}</td>
+            </tr>
+            {% endfor %}
+
+        </table>
+    {% else %}
+    <p> NO Employess recoreds are found!!!</p>
+    {% endif %}
+</body>
+</html>

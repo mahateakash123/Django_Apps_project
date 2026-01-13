@@ -1,0 +1,36 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Books App</title>
+    <link rel="stylesheet" href="{% static 'style1.css' %}">
+</head>
+<body>
+
+    <h1>Books Information</h1>
+    {% if book %}
+        <table border="3">
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Publisher_year</th>
+                <th>Price</th>
+            </tr>
+            {% for b in book %}
+            <tr>
+                <td>{{ b.title }}</td>
+                <td>{{ b.author }}</td>
+                <td>{{ b.publisher_year }}</td>
+                <td>{{ b.price }}</td>
+
+            </tr>
+            {% endfor %}
+        </table>
+        {% else %}
+        <p> Data is not showing </p>
+    {% endif %}
+</body>
+</html>
